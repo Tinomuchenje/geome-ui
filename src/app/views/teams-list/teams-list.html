@@ -10,7 +10,7 @@
     <table class="table table-hover" ng-if="!$ctrl.loading">
       <tr
         ng-repeat="team in $ctrl.filteredTeams | orderBy: 'name'"
-        ng-click="$ctrl.viewTeamOverview(team.id)"
+        ng-click="$ctrl.viewTeamOverview(team.id)" //Should hover here
         layout-xs="column">
         <td>
           <div md-truncate>
